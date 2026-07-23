@@ -1,0 +1,17 @@
+{
+  "name": "create-unitypackage-action",
+  "private": true,
+  "version": "1.0.0",
+  "description": "GitHub Action adapter for r74tech/unitypackage",
+  "author": "r74tech",
+  "repository": "https://github.com/r74tech/create-unitypackage.git",
+  "homepage": "https://github.com/r74tech/create-unitypackage#readme",
+  "bugs": "https://github.com/r74tech/create-unitypackage/issues",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "license": "MIT"
+}

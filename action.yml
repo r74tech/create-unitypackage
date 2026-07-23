@@ -1,0 +1,44 @@
+name: Create a UnityPackage
+description: Create a deterministic Unity package using the unitypackage Go CLI
+author: r74tech
+branding:
+  icon: package
+  color: orange
+inputs:
+  tool-version:
+    description: Version of r74tech/unitypackage to download
+    required: false
+    default: v1.0.0
+  binary:
+    description: Local unitypackage binary; intended for development and self-hosted runners
+    required: false
+  root:
+    description: Unity project or UPM package root
+    required: false
+  files:
+    description: Newline-delimited asset paths
+    required: false
+  files-glob:
+    description: Newline-delimited glob patterns; supports **
+    required: false
+  dest:
+    description: Destination .unitypackage path
+    required: false
+  package-path:
+    description: Legacy alias for dest
+    required: false
+  include-files:
+    description: Legacy path to a newline-delimited file containing .meta paths
+    required: false
+  project-folder:
+    description: Legacy alias for root
+    required: false
+  working-folder:
+    description: Change to this directory before resolving inputs
+    required: false
+outputs:
+  package-path:
+    description: Absolute path of the generated unitypackage
+runs:
+  using: node24
+  main: index.js
