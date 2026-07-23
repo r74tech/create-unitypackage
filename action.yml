@@ -1,4 +1,4 @@
-name: Create a UnityPackage
+name: UnityPackage Builder
 description: Create a deterministic Unity package using the unitypackage Go CLI
 author: r74tech
 branding:
